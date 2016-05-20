@@ -14,11 +14,24 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var myLabel: NSTextField!
    
     @IBAction func button(sender: AnyObject) {
-        myLabel.stringValue="Changed"
+        myLabel.stringValue="Get Rekt"
+    }
+    
+    @IBAction func opt1(sender: AnyObject) {
+        myLabel.stringValue="Option one"
+    }
+    
+    @IBAction func opt2(sender: AnyObject) {
+        myLabel.stringValue="Option two"
     }
 
+    @IBAction func opt3(sender: AnyObject) {
+        myLabel.stringValue="Option three"
+    }
     
-
+    @IBAction func Reset(sender: AnyObject) {
+        myLabel.stringValue="I will change when you click the button"
+    }
        func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
     }

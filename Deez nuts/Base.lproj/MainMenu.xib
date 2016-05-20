@@ -695,9 +695,45 @@
                             <action selector="button:" target="Voe-Tx-rLC" id="eFX-xI-3ZQ"/>
                         </connections>
                     </button>
+                    <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O8u-Bk-vVf">
+                        <rect key="frame" x="15" y="275" width="76" height="26"/>
+                        <popUpButtonCell key="cell" type="push" title="Item 3" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="XAQ-6l-0Kk" id="iHU-tx-DO6">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" id="QeE-lC-5oU">
+                                <items>
+                                    <menuItem title="Item 1" id="AXz-29-qPk">
+                                        <connections>
+                                            <action selector="opt1:" target="Voe-Tx-rLC" id="iAV-Vv-ySu"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem title="Item 2" id="2rG-gi-r9c">
+                                        <connections>
+                                            <action selector="opt2:" target="Voe-Tx-rLC" id="Cyd-uH-pRw"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem title="Item 3" state="on" id="XAQ-6l-0Kk">
+                                        <connections>
+                                            <action selector="opt3:" target="Voe-Tx-rLC" id="Wzn-P3-t5J"/>
+                                        </connections>
+                                    </menuItem>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                    </popUpButton>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GLe-8L-NC9">
+                        <rect key="frame" x="203" y="51" width="75" height="32"/>
+                        <buttonCell key="cell" type="push" title="Reset" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="EWI-RW-xmF">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="Reset:" target="Voe-Tx-rLC" id="uoD-WK-TPT"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="503" y="324"/>
+            <point key="canvasLocation" x="537" y="290"/>
         </window>
     </objects>
 </document>
