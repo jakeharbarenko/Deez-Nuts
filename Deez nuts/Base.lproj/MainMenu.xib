@@ -14,6 +14,7 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Deez_nuts" customModuleProvider="target">
             <connections>
+                <outlet property="myLabel" destination="B3N-0A-cLr" id="QLM-hE-30P"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -675,8 +676,28 @@
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B3N-0A-cLr">
+                        <rect key="frame" x="121" y="172" width="239" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="I will change when you click the button" id="glR-Nc-HBX">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="66a-cc-lZY">
+                        <rect key="frame" x="4" y="312" width="96" height="32"/>
+                        <buttonCell key="cell" type="push" title="Click me!" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="K0k-LT-Axc">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="button:" target="Voe-Tx-rLC" id="eFX-xI-3ZQ"/>
+                        </connections>
+                    </button>
+                </subviews>
             </view>
-            <point key="canvasLocation" x="422" y="337"/>
+            <point key="canvasLocation" x="503" y="324"/>
         </window>
     </objects>
 </document>

@@ -11,7 +11,11 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+    @IBOutlet weak var myLabel: NSTextField!
    
+    @IBAction func button(sender: AnyObject) {
+        myLabel.stringValue="Changed"
+    }
 
     
 
