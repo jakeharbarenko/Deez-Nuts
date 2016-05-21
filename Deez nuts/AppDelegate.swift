@@ -32,6 +32,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func Reset(sender: AnyObject) {
         myLabel.stringValue="I will change when you click the button"
     }
+    
+    @IBOutlet weak var counter: NSTextField!
+    
+    @IBAction func adder(sender: AnyObject) {
+        counter.intValue = counter.intValue+1
+    }
+    
        func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
     }

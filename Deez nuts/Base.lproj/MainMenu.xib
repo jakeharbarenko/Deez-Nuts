@@ -14,6 +14,7 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Deez_nuts" customModuleProvider="target">
             <connections>
+                <outlet property="counter" destination="kiN-E9-Vpe" id="Akn-sS-CXH"/>
                 <outlet property="myLabel" destination="B3N-0A-cLr" id="QLM-hE-30P"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
@@ -731,6 +732,24 @@
                             <action selector="Reset:" target="Voe-Tx-rLC" id="uoD-WK-TPT"/>
                         </connections>
                     </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Qi-KL-64M">
+                        <rect key="frame" x="213" y="98" width="55" height="32"/>
+                        <buttonCell key="cell" type="push" title="+1" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ieQ-TT-5Um">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="adder:" target="Voe-Tx-rLC" id="Vuu-E4-Fmf"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kiN-E9-Vpe">
+                        <rect key="frame" x="217" y="129" width="47" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="1" id="4CS-aY-ioN">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                 </subviews>
                 <constraints>
                     <constraint firstItem="O8u-Bk-vVf" firstAttribute="top" secondItem="66a-cc-lZY" secondAttribute="bottom" constant="20" symbolic="YES" id="3yZ-Mp-dS7"/>
@@ -743,7 +762,7 @@
                     <constraint firstItem="66a-cc-lZY" firstAttribute="centerX" secondItem="O8u-Bk-vVf" secondAttribute="centerX" id="gyJ-0p-YqW"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="723" y="386.5"/>
+            <point key="canvasLocation" x="320" y="409.5"/>
         </window>
     </objects>
 </document>
