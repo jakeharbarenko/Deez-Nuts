@@ -686,8 +686,8 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="66a-cc-lZY">
-                        <rect key="frame" x="4" y="227" width="96" height="32"/>
+                    <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="66a-cc-lZY">
+                        <rect key="frame" x="0.0" y="227" width="96" height="32"/>
                         <buttonCell key="cell" type="push" title="Click me!" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="K0k-LT-Axc">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -696,8 +696,8 @@
                             <action selector="button:" target="Voe-Tx-rLC" id="eFX-xI-3ZQ"/>
                         </connections>
                     </button>
-                    <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="O8u-Bk-vVf">
-                        <rect key="frame" x="15" y="190" width="76" height="26"/>
+                    <popUpButton verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O8u-Bk-vVf">
+                        <rect key="frame" x="4" y="190" width="76" height="26"/>
                         <popUpButtonCell key="cell" type="push" title="Item 3" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="XAQ-6l-0Kk" id="iHU-tx-DO6">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="menu"/>
@@ -722,8 +722,8 @@
                             </menu>
                         </popUpButtonCell>
                     </popUpButton>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GLe-8L-NC9">
-                        <rect key="frame" x="401" y="49" width="75" height="32"/>
+                    <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GLe-8L-NC9">
+                        <rect key="frame" x="0.0" y="145" width="75" height="32"/>
                         <buttonCell key="cell" type="push" title="Reset" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="EWI-RW-xmF">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -733,7 +733,7 @@
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Qi-KL-64M">
-                        <rect key="frame" x="213" y="98" width="55" height="32"/>
+                        <rect key="frame" x="0.0" y="112" width="55" height="32"/>
                         <buttonCell key="cell" type="push" title="+1" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ieQ-TT-5Um">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -743,7 +743,7 @@
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kiN-E9-Vpe">
-                        <rect key="frame" x="217" y="129" width="47" height="17"/>
+                        <rect key="frame" x="182" y="248" width="47" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="1" id="4CS-aY-ioN">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -762,7 +762,9 @@
                     <constraint firstItem="66a-cc-lZY" firstAttribute="centerX" secondItem="O8u-Bk-vVf" secondAttribute="centerX" id="gyJ-0p-YqW"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="320" y="409.5"/>
+            <point key="canvasLocation" x="334" y="464.5"/>
         </window>
+        <viewController id="TTd-tT-8o6"/>
+        <viewController id="oes-4s-fVa"/>
     </objects>
 </document>

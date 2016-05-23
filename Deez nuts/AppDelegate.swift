@@ -31,6 +31,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @IBAction func Reset(sender: AnyObject) {
         myLabel.stringValue="I will change when you click the button"
+        counter.intValue=0
     }
     
     @IBOutlet weak var counter: NSTextField!
